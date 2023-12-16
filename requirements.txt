@@ -1,0 +1,15 @@
+pypdf
+langchain
+torch
+#accelerate
+#bitsandbytes
+transformers
+pinecone-client
+tiktoken
+sentence_transformers
+huggingface_hub
+openai==0.28
+docx2txt
+tensorflow
+flask
+datasets
