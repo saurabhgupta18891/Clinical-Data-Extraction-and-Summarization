@@ -69,7 +69,7 @@ The Project can be used for answering medical-related queries,extracting medical
 
 4. the app will generate summary by using a custom pretrained(finetuned) model(Saurabh91/medical_summarization-finetuned-starmpccAsclepius-Synthetic-Clinical-Notes) which I trained on clinical notes data.
 
-5. Dataset Link([Dataset](#https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes)
+5. Dataset Link([Dataset](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes)
 
 6. jupyter notebook to finetune a model for summarization is provided in the project folder.
 
