@@ -18,9 +18,9 @@ from transformers import AutoTokenizer, pipeline
 app = Flask(__name__)
 
 # Set your Pinecone and OpenAI API keys here
-os.environ["PINECONE_API_KEY"] = "64709212-3efc-426b-b031-e23b62938d05"
+os.environ["PINECONE_API_KEY"] = ""
 os.environ["PINECONE_ENV"] = "gcp-starter"
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 # Specify the upload folder and allowed extensions
 UPLOAD_FOLDER = 'uploads'
