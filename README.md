@@ -67,7 +67,7 @@ The Project can be used for answering medical-related queries,extracting medical
 
 3. The app will provide an answer to input query based on information available in the document and will return medical entities and summary in one single response as json(please check Final_Result.png file) .
 
-4. the app will generate summary by using a custom pretrained(finetuned) model(Saurabh91/medical_summarization-finetuned-starmpccAsclepius-Synthetic-Clinical-Notes) which I trained on clinical notes data.
+4. the app will generate summary by using a custom pretrained(finetuned) model([model](https://huggingface.co/Saurabh91/medical_summarization-finetuned-starmpccAsclepius-Synthetic-Clinical-Notes)) which I trained on clinical notes data.
 
 5. Dataset Link([Dataset](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes))
 
