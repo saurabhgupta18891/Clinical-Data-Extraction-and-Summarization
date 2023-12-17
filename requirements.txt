@@ -1,8 +1,6 @@
 pypdf
 langchain
 torch
-#accelerate
-#bitsandbytes
 transformers
 pinecone-client
 tiktoken
@@ -13,3 +11,4 @@ docx2txt
 tensorflow
 flask
 datasets
+Werkzeug
