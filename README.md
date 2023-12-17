@@ -72,7 +72,7 @@ The Project can be used for answering medical-related queries,extracting medical
 
 5. jupyter notebook to finetune a model for summarization is provided in the project folder.
 
-##Important Notes
+## Important Notes
 
 1.The API will give response in a few minutes due to processing of three modules simultaneously.
 
