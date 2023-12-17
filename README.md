@@ -13,8 +13,7 @@ This Project is designed to provide medical information by answering user querie
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Important Notes](#Important-Notes)
 
 ## Prerequisites
 
