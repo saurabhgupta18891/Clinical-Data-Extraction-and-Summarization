@@ -1,6 +1,6 @@
 import pinecone
 import os
-os.environ["PINECONE_API_KEY"] = "64709212-3efc-426b-b031-e23b62938d05"
+os.environ["PINECONE_API_KEY"] = ""
 os.environ["PINECONE_ENV"] = "gcp-starter"
 
 # initialize pinecone
