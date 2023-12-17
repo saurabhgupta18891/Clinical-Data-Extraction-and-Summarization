@@ -30,6 +30,8 @@ make sure you have the following prerequisites installed on your system.
     - huggingface_hub
     - openai==0.28
     - docx2txt
+    - flask
+    - datasets
 
 ## Installation
 
@@ -47,50 +49,35 @@ make sure you have the following prerequisites installed on your system.
 
 ## Getting Started
 
-To get started with the Llama2 Medical Bot, you need to:
+To get started with the Project, you need to:
 
 1. Set up your environment and install the required packages as described in the Installation section.
 
-2. Configure your project by updating the `DB_FAISS_PATH` variable and any other custom configurations in the code.
+2. Start the project by running the provided Python script(API.py).
 
-3. Prepare the language model and data as per the Langchain documentation.
+3. Install Postman to test the flask API using the request(Final_Result image is given).
 
-4. Start the bot by running the provided Python script or integrating it into your application.
 
 ## Usage
 
-The Llama2 Medical Bot can be used for answering medical-related queries. To use the bot, you can follow these steps:
+The Project can be used for answering medical-related queries,extracting medical entities and generating a summary. To use the project, you can follow these steps:
 
-1. Start the bot by running your application or using the provided Python script.
+1. Start the application by running  the provided Python script(API.py).
 
-2. Send a medical-related query to the bot.
+2. Send a medical-related query and required medical document(.docx format only) as a request through postman.
 
-3. The bot will provide a response based on the information available in its database.
+3. The app will provide an answer to input query based on information available in the document and will return medical entities and summary in one single response as json(please check Final_Result.png file) .
 
-4. If sources are found, they will be provided alongside the answer.
+4. the app will generate summary by using a custom pretrained(finetuned) model(Saurabh91/medical_summarization-finetuned-starmpccAsclepius-Synthetic-Clinical-Notes) which I trained on clinical notes data.
 
-5. The bot can be customized to return specific information based on the query and context provided.
+5. jupyter notebook to finetune a model for summarization is provided in the project folder.
 
-## Contributing
+##Important Notes
 
-Contributions to the Llama2 Medical Bot are welcome! If you'd like to contribute to the project, please follow these steps:
+1.The API will give response in a few minutes due to processing of three modules simultaneously.
 
-1. Fork the repository to your own GitHub account.
+2.I also did r&d on Llama-2 quantized model for inferencing(results are not that good as GPT-3.5)
 
-2. Create a new branch for your feature or bug fix.
+3.please delete pinecone index before generating a new request with new document(limitation of pinecone free version.only one index for one document can be created),(run pinecone_delete.py file and then generate a new api request)
 
-3. Make your changes and ensure that the code passes all tests.
-
-4. Create a pull request to the main repository, explaining your changes and improvements.
-
-5. Your pull request will be reviewed, and if approved, it will be merged into the main codebase.
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-For more information on how to use, configure, and extend the Llama2 Medical Bot, please refer to the Langchain documentation or contact the project maintainers.
-
-Happy coding with Llama2 Medical Bot! 🚀
+ 🚀
