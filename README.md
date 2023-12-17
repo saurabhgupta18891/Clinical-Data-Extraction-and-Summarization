@@ -3,7 +3,7 @@
 # Clinical-Data-Extraction-and-Summarization
 
 
-The Llama2 Medical Bot is a powerful tool designed to provide medical information by answering user queries using state-of-the-art language models and vector stores. This README will guide you through the setup and usage of the Llama2 Medical Bot.
+This Project is designed to provide medical information by answering user queries using state-of-the-art language models and vector stores ,there are 3 individual tasks NER,Question answer and summarization which this project do . This README will guide you through the setup and usage of the Clinical Data Extraction and Summarization.
 
 ## Table of Contents
 
@@ -18,31 +18,22 @@ The Llama2 Medical Bot is a powerful tool designed to provide medical informatio
 
 ## Prerequisites
 
-Before you can start using the Llama2 Medical Bot, make sure you have the following prerequisites installed on your system:
+make sure you have the following prerequisites installed on your system.
 
-- Python 3.6 or higher
+- Python 3.9 or higher
 - Required Python packages (you can install them using pip):
     - langchain
-    - chainlit
+    - pinecone-client
     - sentence-transformers
-    - faiss
-    - PyPDF2 (for PDF document loading)
+    - transformers
+    - tiktoken
+    - huggingface_hub
+    - openai==0.28
+    - docx2txt
 
 ## Installation
 
-1. Clone this repository to your local machine.
-
-    ```bash
-    git clone https://github.com/your-username/langchain-medical-bot.git
-    cd langchain-medical-bot
-    ```
-
-2. Create a Python virtual environment (optional but recommended):
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-    ```
+1. Create a Python virtual environment or conda environment:
 
 3. Install the required Python packages:
 
@@ -50,9 +41,9 @@ Before you can start using the Llama2 Medical Bot, make sure you have the follow
     pip install -r requirements.txt
     ```
 
-4. Download the required language models and data. Please refer to the Langchain documentation for specific instructions on how to download and set up the language model and vector store.
+4. Use open ai api key which is provided in the API script itself
 
-5. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
+5. Use pinecone api key and environment,that is mentioned in the script.
 
 ## Getting Started
 
